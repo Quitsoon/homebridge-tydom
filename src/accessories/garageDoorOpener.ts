@@ -176,7 +176,7 @@ export const setupGarageDoorOpener = (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   service
     .getCharacteristic(TargetDoorState)
@@ -261,7 +261,7 @@ export const setupGarageDoorOpener = (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   // const switchService = addAccessoryService(accessory, Service.Switch, `${accessory.displayName} Switch`, true);
   // debugAddSubService(switchService, accessory);
