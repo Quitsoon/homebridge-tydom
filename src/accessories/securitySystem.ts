@@ -192,7 +192,7 @@ export const setupSecuritySystem = async (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   service
     .getCharacteristic(StatusTampered)
@@ -207,7 +207,7 @@ export const setupSecuritySystem = async (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   service
     .getCharacteristic(SecuritySystemTargetState)
