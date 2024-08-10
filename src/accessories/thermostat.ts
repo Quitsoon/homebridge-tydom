@@ -73,7 +73,7 @@ export const setupThermostat = (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   service
     .getCharacteristic(TargetHeatingCoolingState)
@@ -129,7 +129,7 @@ export const setupThermostat = (
         callback(err as Error);
       }
     })
-    .getValue();
+    .value;
 
   service
     .getCharacteristic(TargetTemperature)
